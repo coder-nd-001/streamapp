@@ -8,7 +8,8 @@ import streamlit as st
 #load titanic dataset 
 @st.cache_data
 def load_data():
-    data =pd.read_csv(r"C:\Users\Nagesh\Desktop\Naresh IT\EDA\titanic dataset.csv")
+    data = pd.read_csv("https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv")
+
     return data
 
 data  = load_data()
